@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="main">
+        <div class="top-bar">
+            <p>Track severe weather changes & enjoy custom web search from your new tab. &nbsp;<a href="#">Get Forecast</a></p>
+        </div>
+        <div class="inner-box">
+            <p class="weather-text">
+                Get Weather Forecast & Radar!
+            </p>
+            <div class="small-line"></div>
+            <p class="input-info-text">
+                Enter a Zipcode, City or Place
+            </p>
+            <form autocomplete="off">
+                <input name="location" class="weather-input" type="text" list="datalist" placeholder="Enter Location" required />
+                <datalist id="datalist">
+                    <option value="Delhi"></option>
+                    <option value="Ahemdabad"></option>
+                    <option value="Punjab"></option>
+                    <option value="Uttar Pradesh"></option>
+                    <option value="Himachal Pradesh"></option>
+                    <option value="Karnatka"></option>
+                    <option value="Kerela"></option>
+                    <option value="Maharashtra"></option>
+                    <option value="Gujrat"></option>
+                    <option value="Rajasthan"></option>
+                    <option value="Bihar"></option>
+                    <option value="Tamil Nadu"></option>
+                    <option value="Haryana"></option>
+                </datalist>
+                <button type="submit" class="button">
+                    <span class="button-text">CONTINUE</span>
+                    <span class="button-icon">
+                        <img src="./images/group-copy.svg">
+                    </span>
+                </button>
+            </form>
+            <p class="agreement-text">
+                By clicking above, you are agreeing to install Weather Forecast from Chrome™ Web Store and agreeing to abide by the <a href="#">EULA</a>, <a href="#">Privacy Policy</a>, <a href="#">Endorsement Disclaimer & DMCA Policy</a>.
+            </p>
+        </div>
+        <div class="bottom-bar">
+            <ul>
+                <li>Privacy Policy</li>
+                <li>EULA</li>
+                <li>Endorsement Disclaimer and DMCA Policy</li>
+                <li>Contact Us</li>
+                <li>Uninstall</li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

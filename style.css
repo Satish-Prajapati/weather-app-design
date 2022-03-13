@@ -1,0 +1,195 @@
+body {
+    margin: 0;
+    background: url(./images/wfd-bg-img.png) no-repeat fixed;
+    background-size: 100% 100%;
+    height: 100vh;  
+    overflow-x: hidden;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.top-bar {
+    background-color: #f5a623;
+}
+
+.top-bar p {
+    text-align: center;
+    padding: 8px 0;
+    margin: 0;
+    color: #fff;
+}
+
+.inner-box {
+    align-self: center;
+    width: 600px;
+    height: 350px;
+    padding: 35px 50px 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.weather-text {
+    margin: 0 auto;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 1.67;
+    letter-spacing: 0.05px;
+    color: #333;
+}
+.small-line {
+    width: 100px;
+    height: 5px;
+    background-color: #0068d0;
+    margin: 0 auto;
+}
+.input-info-text {
+    margin: 41px 0px 24px;
+    color: #333;
+}
+.weather-input {
+    width: 390px;
+    padding: 10px 0px;
+    padding-left: 35px;
+    display: block;
+    border: 1px solid #979797;
+    border-radius: 2px;
+    background-image: url(./images/icon-24-px.png);
+    background-repeat: no-repeat;
+    background-position: 5px 7px;
+    background-color: #f2f2f2;
+    margin: 0 auto;
+}
+
+.button {
+    display: flex;
+    height: 79px;
+    padding: 0;
+    background: #0068d0;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    width: 428px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+.button-text, .button-icon {
+    display: inline-flex;
+    align-items: center;
+    color: #fff;
+    height: 100%;
+}
+.button:hover {
+    background: #1160af;
+}
+ 
+span.button-text {
+    width: 70%;
+    font-size: 36px;
+    letter-spacing: 0.04px;
+    justify-content: center;
+}
+
+.button-icon {
+    background: rgba(0, 0, 0, 0.08);
+    width: 30%;
+}
+
+.button-icon img {
+    margin: 0 auto;
+}
+
+.agreement-text {
+    width: 425px;
+    height: 28px;
+    padding-top: 25px;
+    font-size: 10px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: 0.01px;
+    text-align: center;
+    color: #999;
+    margin: 0 auto;
+}
+
+.bottom-bar {
+    width: 100%;
+    height: 80px;
+    opacity: 0.5;
+    background-color: #000;
+}
+ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #f0f0f0;
+    height: inherit;
+}
+
+li {
+    display: inline;
+    padding: 0 10px;
+    border-left: solid 1px #f0f0f0;
+}
+
+li:first-child {
+    border-left: none;
+}
+
+p a {
+    color: inherit;
+}
+
+@media only screen and (max-width: 1024px) {
+    body {
+        background-size: cover;    
+    }
+}
+
+@media only screen and (max-width: 762px) {
+    body {
+        background-size: unset;
+    }
+    .inner-box {
+        margin: auto 20px;
+        height: fit-content;
+        padding: 30px;
+        width: auto;
+    }
+    .weather-text {
+        font-size: 35px;
+    }
+    .weather-input {
+        width: 80%;
+    }
+    .button {
+        width: 94%;
+    }
+    .agreement-text {
+        width: auto;
+    }
+    .bottom-bar {
+        height: 65px;
+    }   
+    span.button-text {
+        font-size: 28px;
+    } 
+    .top-bar p {
+        font-size: 12px;
+    }
+}
